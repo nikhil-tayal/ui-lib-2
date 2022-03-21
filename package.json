@@ -1,13 +1,14 @@
 {
   "name": "@nikhil-tayal/ui-lib-2",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/nikhil-tayal"
   },
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "publish:patch": "yarn && yarn version --patch && yarn rollup"
   },
   "author": "",
   "license": "MIT",
