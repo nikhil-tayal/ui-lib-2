@@ -24,6 +24,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: ls -a
+    - run: yarn
     - run: yarn rollup
     - run: npm version patch
     - run: yarn publish
