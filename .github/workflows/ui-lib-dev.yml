@@ -23,9 +23,7 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'yarn'
     - run: ls -a
-    - run: yarn ci
     - run: yarn rollup
     - run: npm version patch
     - run: yarn publish
