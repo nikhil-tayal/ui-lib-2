@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "es2016",
+    "baseUrl": "./",
     "jsx": "react",
     "module": "ESNext",
     "declaration": true,
@@ -10,5 +11,5 @@
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "emitDeclarationOnly": true
-  }
+  },
 }
