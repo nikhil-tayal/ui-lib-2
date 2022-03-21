@@ -1,6 +1,6 @@
 {
   "name": "@nikhil-tayal/ui-lib-2",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/nikhil-tayal"
   },
@@ -9,10 +9,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "rollup": "rollup -c",
     "yarn:build": "yarn && yarn rollup",
-    "publish:patch": "yarn version --patch && yarn:build",
-    "publish:minor": "yarn version --minor && yarn:build",
-    "publish:major": "yarn version --major && yarn:build",
-    "publish:custom": "yarn version && yarn:build"
+    "publish:patch": "yarn version --patch && yarn yarn:build",
+    "publish:minor": "yarn version --minor && yarn arn:build",
+    "publish:major": "yarn version --major && yarn yarn:build",
+    "publish:custom": "yarn version && yarn yarn:build"
   },
   "author": "",
   "license": "MIT",
