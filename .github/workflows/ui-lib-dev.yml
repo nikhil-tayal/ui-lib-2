@@ -6,7 +6,6 @@ name: 'publish'
 on:
   push:
     branches: [ master ]
-
 jobs:
   build:
 
