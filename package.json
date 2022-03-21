@@ -9,7 +9,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "rollup": "rollup -c",
     "yarn:build": "yarn && yarn rollup",
-    "publish:patch": "yarn version --patch && yarn yarn:build",
+    "git": "git add . && git commit -m",
+    "publish:patch": "yarn version --patch && yarn yarn:build && yarn git",
     "publish:minor": "yarn version --minor && yarn arn:build",
     "publish:major": "yarn version --major && yarn yarn:build",
     "publish:custom": "yarn version && yarn yarn:build"
