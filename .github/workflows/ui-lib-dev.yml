@@ -26,6 +26,8 @@ jobs:
     - run: ls -a
     - run: yarn
     - run: yarn rollup
-    - run: npm version patch
+    - name: Update version in package.json
+      uses: maks-stupak/gh-action-bump-version@v7.1.5
+
     - run: yarn publish
 
