@@ -25,7 +25,7 @@ jobs:
         registry-url: https://registry.npmjs.com
     - run: yarn
     - run: yarn rollup
-    - run: npm publish --access public
+    - run: npm publish
       env:
           NODE_AUTH_TOKEN: ${{secrets.NODE_AUTH_TOKEN}}
 
