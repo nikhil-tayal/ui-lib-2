@@ -1,5 +1,7 @@
 import React, { ReactChild, MouseEvent } from 'react';
 import Button from '@mui/material/Button';
+import { ThemeProvider } from '@mui/material/styles';
+import { Theme } from 'src/theme';
 export interface AppButtonProps {
   children?: ReactChild | ReactChild[];
   type?: 'button' | 'submit' | 'reset' | undefined;
@@ -15,15 +17,18 @@ export interface AppButtonProps {
 const AppButton = (props: AppButtonProps) => {
   const { children, variant, onClick, type, className, ...other } = props;
   return (
-    <Button
-      variant={variant}
-      onClick={onClick}
-      type={type}
-      className={className}
-      {...other}
-    >
-      {children}
-    </Button>
+    <ThemeProvider theme={Theme}>
+      <Button
+        variant={variant}
+        onClick={onClick}
+        type={type}
+        className={className}
+        {...other}
+      >
+        {children}
+      </Button>
+    </ThemeProvider>
+
   );
 };
 
