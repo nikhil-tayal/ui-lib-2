@@ -1,7 +1,7 @@
 import React, { ReactChild, MouseEvent } from 'react';
 import Button from '@mui/material/Button';
 import { ThemeProvider } from '@mui/material/styles';
-import { Theme } from 'src/theme';
+import { Theme } from '../../theme';
 export interface AppButtonProps {
   children?: ReactChild | ReactChild[];
   type?: 'button' | 'submit' | 'reset' | undefined;
