@@ -15,7 +15,7 @@ export interface AppButtonProps {
 }
 
 const AppButton = (props: AppButtonProps) => {
-  const { children, variant, onClick, type, className, ...other } = props;
+  const { children, variant, onClick, type, className, color, ...other  } = props;
   return (
     <ThemeProvider theme={Theme}>
       <Button
@@ -23,6 +23,7 @@ const AppButton = (props: AppButtonProps) => {
         onClick={onClick}
         type={type}
         className={className}
+        color={color}
         {...other}
       >
         {children}
