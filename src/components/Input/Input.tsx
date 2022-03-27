@@ -7,10 +7,8 @@ interface IInput {
   type?: 'text' | 'password' | 'file'
 }
 export default function Input(props: any) {
-  const { variant = 'standard', label, id, type = 'text' } = props
+  const { variant = 'standard', label, id, type = 'text', ...otherProps } = props
   return (
-    <div>
-      <TextField id={id} label={label} variant={variant} type={type} />
-    </div>
+    <TextField id={id} label={label} variant={variant} type={type} {...otherProps} />
   )
 }
