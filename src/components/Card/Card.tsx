@@ -5,7 +5,7 @@ interface IAppCard {
   children: ReactNode;
   heading?: string;
 }
-export default function AppCard(props: IAppCard) {
+export default function AppCard(props: any) {
   const { children, heading } = props
   return (
     <Box sx={{ p: 0, boxShadow: 2, borderRadius: 2, fontFamily: 'Raleway' }} >

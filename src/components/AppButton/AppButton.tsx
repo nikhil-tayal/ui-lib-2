@@ -12,10 +12,11 @@ export interface AppButtonProps {
   fullWidth?: boolean;
   color?: 'primary' | 'secondary';
   disabled?: boolean;
+  required?: true | false
 }
 
-const AppButton = (props: AppButtonProps) => {
-  const { children, variant, onClick, type, className, color, ...other  } = props;
+const AppButton = (props: any) => {
+  const { children, variant, onClick, type, className, color, fullWidth, required, ...other } = props;
   return (
     <ThemeProvider theme={Theme}>
       <Button
@@ -24,6 +25,7 @@ const AppButton = (props: AppButtonProps) => {
         type={type}
         className={className}
         color={color}
+        fullWidth={fullWidth}
         {...other}
       >
         {children}

@@ -4,10 +4,9 @@ import TextField from '@mui/material/TextField';
 interface IInput {
   variant?: 'outlined' | 'filled' | 'standard',
   label?: string
-  id?: string
   type?: 'text' | 'password' | 'file'
 }
-export default function Input(props: IInput) {
+export default function Input(props: any) {
   const { variant = 'standard', label, id, type = 'text' } = props
   return (
     <div>
