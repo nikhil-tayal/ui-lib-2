@@ -1,6 +1,6 @@
 {
   "name": "@nikhil-tayal/ui-lib-2",
-  "version": "1.0.41",
+  "version": "1.0.42",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/nikhil-tayal"
   },
