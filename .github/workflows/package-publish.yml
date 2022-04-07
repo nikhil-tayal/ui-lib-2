@@ -23,7 +23,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         registry-url: https://registry.npmjs.org
-    - run: npm rollup
+    - run: npm run rollup
     - run: npm ci
     - run: npm run semantic-release
       env:
