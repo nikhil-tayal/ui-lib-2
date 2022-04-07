@@ -24,8 +24,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
         # registry-url: https://registry.npmjs.org
     # - run: yarn rollup
-    - run: yarn install --frozen-lockfile
-    - run: yarn run semantic-release
+    - run: npm ci
+    - run: npm run semantic-release
       env:
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
           GH_TOKEN: ${{secrets.GH_TOKEN}}
