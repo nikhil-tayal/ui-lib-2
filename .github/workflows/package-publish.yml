@@ -22,7 +22,8 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
-        registry-url: https://registry.npmjs.org
+        # registry-url: https://registry.npmjs.org
+    # - run: npm run rollup
     - run: npm ci
     - run: npm run semantic-release
       env:
